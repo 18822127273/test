@@ -1,0 +1,227 @@
+/* 主页面css公共样式 */
+/* maincss样式 */
+.backpack{
+	position: relative;
+	margin: 10px;
+}
+body {
+	margin: 0;
+}
+
+.el-container {
+	left: 5%;
+}
+
+.el-header,
+.el-footer {
+	line-height: 60px;
+	margin: 10px;
+	box-shadow: 0 0 20px black;
+}
+
+.el-aside {
+	overflow: hidden;
+	margin: 10px;
+	box-shadow: 0 0 20px black;
+}
+
+.el-main {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	font-size: 14px;
+	box-shadow: 0 0 20px black;
+}
+
+/* ,mianheader */
+.main_header {
+	/* margin: 20px; */
+	line-height: 60px;
+}
+
+img {
+	cursor: pointer;
+}
+
+.title {
+	line-height: 60px;
+	width: 300px;
+	height: 17px;
+	font-size: 18px;
+	margin-left: 0px;
+	font-weight: bold;
+	-webkit-background-clip: text;
+/* 	color: transparent; */
+}
+
+.main_headerright {
+	float: right;
+	line-height: 60px;
+
+}
+
+/* maincontent */
+.content_header {
+	width: 100%;
+	position: relative;
+}
+/* businesscss */
+
+/* /commmunity */
+.communadd {
+	width: 100%;
+	height: 100%;
+}
+
+/* commmunlistcss */
+.commadd {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+}
+
+.commadd_center {
+	height: 80%;
+	margin: 100px 200px 100px 200px;
+	position: relative;
+	padding: 0;
+}
+
+.commadds {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+
+}
+
+.commadd_centers {
+	margin: 100px 200px 100px 200px;
+	position: relative;
+	padding: 0;
+  height: 500px;
+
+}
+.commaddcenter_header{
+  height: 100px;
+}
+.commadd_content{
+  height: 630px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  /* 纵向滚动条 宽度 */
+  height: 5px;
+  /* 横向滚动条 高度 */
+}
+
+::-webkit-scrollbar-button {
+  width: 5px;
+  /* 横向滚动条 宽度 */
+  height: 5px;
+  /* 纵向滚动条 高度 */
+  border-radius: 5px;
+  background-color: #1F98FA;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(113, 147, 214, 1);
+  border-radius: 8px;
+}
+.commadd_centers .demo-ruleForm {
+	border: 1px solid #dcdfe6;
+	width: auto;
+	margin: 10px;
+}
+.commadd_center .demo-ruleForm {
+	border: 1px solid #dcdfe6;
+	width: auto;
+	margin: 10px;
+}
+
+/* login */
+.first_login_container {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.login_form {
+	border: 1px solid #dcdfe6;
+	width: 350px;
+	margin: 180px auto;
+	padding: 35px 35px 15px 35px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	box-shadow: 0 0 25px #909399;
+}
+
+.login-title {
+	text-align: center;
+	margin: 0 auto 40px auto;
+	color: black;
+	font-size: 30px;
+}
+
+/* region */
+.reg {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.demo-ruleForm {
+	border: 1px solid #dcdfe6;
+	width: 60%;
+	margin: 0px 100px 100px 0px;
+	padding: 35px 50px 15px 35px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #fff;
+	-moz-border-radius: 5px;
+	/* box-shadow: 0 0 25px #909399; */
+}
+
+.el-form-item_label {
+	padding: 0 0 0 0;
+}
+
+.login-title {
+	text-align: center;
+	margin: 0 auto 40px auto;
+	color: black;
+}
+
+.bind_code_input {
+	width: 70%;
+}
+
+.bind_code_gain {
+	cursor: pointer;
+}

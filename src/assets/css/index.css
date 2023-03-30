@@ -1,0 +1,690 @@
+/* 模型代码 */
+#cesiumDemo {
+    width: 100vw;
+    height: 100vh;
+
+  }
+
+  .ceshiIptBox {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    width: 300px;
+    z-index: 9;
+    color: white;
+    font-size: 13px;
+  }
+
+  /* 隐藏cesium标志 */
+  .cesium-viewer .cesium-widget-credits {
+    display: none;
+  }
+
+  .modeView {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    cursor: pointer;
+  }
+
+  .messageBoxTit {
+    color: #ffffff;
+  }
+
+  .messageVal {
+    color: #c7ff06;
+  }
+
+  .messageBox {
+    position: absolute;
+    left: -88px;
+    top: -190px;
+    /* border-radius: 5px; */
+    background: rgba(41, 192, 183, 0.6);
+    padding: 6px;
+    box-shadow: 0 0 10px rgb(0, 110, 150);
+    z-index: 8;
+    color: #30fff5;
+    /* box-shadow: 0 0 20px #30fff5 inset !important; */
+    background-color: rgba(0, 54, 120, 0.7);
+    width: 200px;
+    border: 2px #1aabff solid;
+  }
+
+  .messageBox .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 4px;
+    line-height: 22px;
+  }
+
+  .messageBox .contList {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    line-height: 23px;
+    margin-right: 10px;
+  }
+
+  .messageBox .topLine {
+    border-top: 1px #30fff5 solid;
+    position: absolute;
+    left: -30px;
+    top: 68px;
+    width: 30px;
+  }
+
+  .messageBox .slantLine {
+    border-top: 1px #30fff5 solid;
+    position: absolute;
+    left: -136px;
+    top: 118px;
+    width: 129px;
+    transform: rotateZ(-50deg);
+  }
+  .all .el-table::before{
+    background-color: transparent;
+  }
+/* 大屏主页面数据 */
+.full {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.header {
+  position: absolute;
+  width:100%;
+  height: 60px;
+  background-color: rgba(3, 80, 116, 0.8);
+  text-align: center;
+}
+.yulan{
+    width:200px;
+    height:700px;
+    position: absolute;
+    ackground-color: rgba(3, 80, 116, 0.8);
+    top:100px;
+    margin:0px 10px 0px 10px;
+
+  }
+  .dv-border-box-11  {
+      /* background:  rgba(3, 80, 116, 0.8); */
+     color:#fff
+  }
+/* 这是大屏数据居民css */
+.all {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(3, 80, 116, 0.8);
+  overflow: auto;
+  z-index: 1000;
+}
+
+.allcenter {
+  width: calc(100%-200px);
+  height: calc(100%-200px);
+  margin: 100px 200px;
+  font-size: 27px;
+}
+
+.allcenter-header {
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+
+.allcenter-content {
+  width: 100%;
+  height: 100%;
+}
+
+.allcenter-content-header {
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: left;
+}
+.allcenter-content-header .el-input__inner {
+    color: #fff;
+}
+
+.allcenter-content-header-one {
+  height: 39px;
+  color: #fff;
+  width: calc(100%-10px);
+  line-height: 39px;
+  font-size: 28px;
+  margin-right: 10px;
+  background-color: rgba(3, 80, 116, 0.8);
+  border: 2px solid #ccc;
+}
+.allcenter-content-content {
+  width: 100%;
+  height: 750px;
+  margin-top: 23px;
+  border: 2px solid #ccc;
+}
+
+.allcenter-content-contents {
+  width: calc(100%-10px);
+  height: 750px;
+  margin-top: 23px;
+  background-color: rgba(3, 80, 116, 0.8);
+  border: 2px solid #ccc;
+  position: relative;
+}
+
+.allcenter-righth {
+  width:100%;
+  height: 100%;
+}
+
+.allcenter-right {
+  float: right;
+  width: 137px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgba(3, 80, 116, 0.8);
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.all .content_footer {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 700px;
+  font-size: 15px;
+  justify-content: space-between;
+}
+
+.allcenter-rights {
+  background-color: rgba(3, 80, 116, 0.8);
+  text-align: center;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.all .img {
+  width: 100px;
+  height: 120px;
+  background-color: #1F98FA;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.all .el-descriptions__body {
+  color: #fff;
+  margin: 10px;
+  font-size: 24px;
+  background-color: transparent;
+}
+
+.all .el-table,
+.el-table__expanded-cell {
+  background-color: transparent;
+}
+.el-row{
+  position: unset;
+}
+/* 用来设置当前页面element全局table 选中某行时的背景色*/
+.all .el-table__body tr.current-row>td {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #f19944;
+  /* 设置文字颜色，可以选择不设置 */
+}
+
+/* 用来设置当前页面element全局table 鼠标移入某行时的背景色*/
+.all .el-table--enable-row-hover .el-table__body tr:hover>td {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  /* color: #f19944; */
+  /* 设置文字颜色，可以选择不设置 */
+}
+
+.all .el-table th {
+  color: #1F98FA;
+  font-size: 25px;
+}
+
+.all .el-table tr {
+  background-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.all .el-descriptions__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1F98FA;
+  margin-left: 10px;
+}
+
+.all .el-descriptions-item__label {
+  font-size: 25px;
+  font-weight: 700;
+  color: red;
+}
+
+.addtable_content .el-descriptions-item__label {
+  color: lightseagreen;
+}
+
+.addtable-headers .el-descriptions-item__label {
+  color: #fff;
+}
+
+.all .el-table th.el-table__cell {
+  background-color: transparent;
+}
+
+
+.all .el-input__inner {
+  background-color: rgba(3, 80, 116, 0.8);
+  border-top: 0;
+  border-left: 0;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.all .el-button {
+  color: white;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.content_footer .el-button {
+  border-radius: 0;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+
+
+.el-menu-demo {
+  height: 60px;
+  background-color: transparent;
+}
+
+.el-menu--horizontal>.el-menu-item {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid transparent;
+  color: #909399;
+}
+
+.el-menu-item {
+  height: 60px;
+  font-size: 25px;
+}
+
+.el-menu--horizontal>.el-menu-item {
+  float: left;
+  height: 60px;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  color: #909399;
+}
+
+.el-table .el-table__cell {
+  text-align: center;
+}
+
+.el-table {
+  height: 100%;
+  position: inherit;
+}
+
+.el-table .el-table__body-wrapper {
+  overflow: auto;
+  height: calc(100% - 10px);
+}
+
+.el-table .el-table__body-wrapper::-webkit-scrollbar {
+  width: 5px;
+  /* 纵向滚动条 宽度 */
+  height: 5px;
+  /* 横向滚动条 高度 */
+}
+
+.el-table .el-table__body-wrapper::-webkit-scrollbar-button {
+  width: 5px;
+  /* 横向滚动条 宽度 */
+  height: 5px;
+  /* 纵向滚动条 高度 */
+  border-radius: 5px;
+  background-color: #1F98FA;
+}
+
+/* Track */
+.el-table .el-table__body-wrapper ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 8px;
+}
+
+/* Handle */
+.el-table .el-table__body-wrapper::-webkit-scrollbar-thumb {
+  background: rgba(113, 147, 214, 1);
+  border-radius: 8px;
+}
+
+.cell.el-tooltip {
+  text-align: center;
+}
+
+.el-table td.el-table__cell,
+.el-table th.el-table__cell.is-leaf {
+  border-bottom: 0;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 20px;
+  color: white;
+  top: 0;
+  margin-right: 20px;
+}
+.left {
+  float: left;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+/* 增加页面 */
+.addtable {
+  background-color: rgba(113, 147, 214, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  overflow: auto;
+}
+.addtable_center {
+  height: 800px;
+  margin: 100px 200px;
+  position: relative;
+  background-color: rgba(3, 80, 116, 0.8);
+}
+.addtable_centers {
+  height: 800px;
+  margin:100px 200px;
+  position: relative;
+  background-color: rgba(3, 80, 116, 0.8);
+}
+
+.close {
+  float: right;
+  width: 237px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  margin: 10px 10px;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: rgba(3, 80, 116, 0.8);
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.titles {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.allcenter-headers {
+  width: 100%;
+  height: 60px;
+  margin-right: 10px;
+  border-bottom: 2px solid #fff;
+}
+
+.header_img {
+  width: 60px;
+  height: 80px;
+  background-color: red;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+
+.addtable_content {
+  height: 65%;
+}
+
+.addtable_content .el-descriptions {
+  height: 100%;
+}
+
+.addtable_content .el-descriptions__body {
+  overflow: auto;
+  height: calc(100% - 30px);
+}
+
+.addtable_content .el-descriptions__body::-webkit-scrollbar {
+  width: 3px;
+  /* 纵向滚动条 宽度 */
+  height: 5px;
+  /* 横向滚动条 高度 */
+}
+
+.addtable_content .el-descriptions__body::-webkit-scrollbar-button {
+  width: 5px;
+  /* 横向滚动条 宽度 */
+  height: 5px;
+  /* 纵向滚动条 高度 */
+  border-radius: 5px;
+  background-color: #1F98FA;
+}
+
+/* Track */
+.addtable_content .el-descriptions__body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 8px;
+}
+
+/* Handle */
+.addtable_content .el-descriptions__body::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.cell.el-tooltip {
+  text-align: center;
+}
+
+/* /jumin */
+.inhabit .el-descriptions {
+  height: 100%;
+}
+
+.inhabit .el-descriptions__body {
+  overflow: auto;
+  height: calc(100% - 70px);
+}
+
+.inhabit .el-descriptions__body::-webkit-scrollbar {
+  width: 3px;
+  /* 纵向滚动条 宽度 */
+  height: 10px;
+  /* 横向滚动条 高度 */
+}
+
+.inhabit .el-descriptions__body::-webkit-scrollbar-button {
+  width: 5px;
+  /* 横向滚动条 宽度 */
+  height: 10px;
+  /* 纵向滚动条 高度 */
+  border-radius: 5px;
+  background-color: #1F98FA;
+}
+
+.inhabit .el-descriptions__body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 8px;
+}
+
+/* Handle */
+.inhabit .el-descriptions__body::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 8px;
+}
+
+
+/* 建筑样式
+ */
+
+
+.building_left {
+  height: calc(100% - 75px);
+  position: inherit;
+}
+
+.building_left {
+  overflow: auto;
+  height: calc(100% - 75px);
+}
+
+.building_left::-webkit-scrollbar {
+  width: 5px;
+  /* 纵向滚动条 宽度 */
+  height: 5px;
+  /* 横向滚动条 高度 */
+}
+
+.building_left::-webkit-scrollbar-button {
+  width: 5px;
+  /* 横向滚动条 宽度 */
+  height: 10px;
+  /* 纵向滚动条 高度 */
+  border-radius: 5px;
+  background-color: #1F98FA;
+}
+
+/* Track */
+.building_left::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 8px;
+}
+
+/* Handle */
+.building_left::-webkit-scrollbar-thumb {
+  background: rgba(113, 147, 214, 1);
+  border-radius: 8px;
+}
+
+.building_header {
+  width:100%;
+  height: 60px;
+  margin: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.building_content {
+  width: 100%;
+  height: 680px;
+  font-size: 30px;
+  position: relative;
+}
+
+.building_center {
+  height: 410px;
+  margin: 10px 0px 10px 0px ;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.building_left {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 410px;
+  margin: 10px;
+  text-align: left;
+}
+
+.building_left ul>li:nth-child(1) {
+  width: 20%;
+}
+
+.building_left ul>li {
+  float: left;
+  line-height: 60px;
+  color: #fff;
+  height: 60px;
+}
+
+.building_left ul>li:nth-child(2) {
+  width: 80%;
+  height: auto;
+}
+
+.building_left ul>li:nth-child(2) span {
+  background-color: lightblue;
+  border-radius: 5%;
+  margin-left: 10px;
+  padding: 1px;
+  font-size: 20px;
+}
+
+.building_left ul>li:nth-child(2) span:hover {
+  background-color: #1F98FA;
+  cursor: pointer;
+}
+
+.building_right_one {
+  /* 	width:200px; */
+  height: 200px;
+  margin: 10px 10px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.building_right_two {
+  height: 200px;
+  margin: 0px 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.building_right_three {
+  height: 200px;
+  margin: 10px 10px 0px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.building_footer_left {
+  height: 200px;
+  margin: 0px 0px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.building_footer_right {
+  height: 200px;
+  margin: 0px 0px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
